@@ -1,0 +1,41 @@
+{% extends './base.html'%}
+
+{% block tittle %} Cuenta {% endblock%}
+
+{% block body %}
+
+<div class="log">
+<div class="login-card-container">
+    <div class="login-card">
+        <div class="login-card-logo">
+            <img src="../static/logo4.png" alt="logo">
+        </div>
+        <div class="login-card-header">
+            <h1>Registrarse</h1>
+            <div>Por favor Registrase</div>
+        </div>
+        <form action="/insertar" method="post" class="login-card-form">
+            <!-- <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">id</span>
+                <input type="text" placeholder="Ingrese el nombre" id="id" name="id" autofocus required>
+            </div> -->
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">Nombre</span>
+                <input type="text" placeholder="Ingrese el nombre" id="nombre" name="nombre" autofocus required>
+            </div>
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">Correo</span>
+                <input type="email" placeholder="Ingrese el correo" id="correo" name="correo"  required>
+            </div>
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">Contraseña</span>
+                <input type="password" placeholder="Ingrese la contraseña" id="contraseña" name="contraseña" required>
+            </div>
+            <button type="submit">Agregar</button>
+        </form>
+
+    </div>
+
+</div>
+</div>
+{% endblock %}

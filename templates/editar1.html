@@ -1,0 +1,42 @@
+{% extends './base.html' %}
+
+{% block tittle %} Actualizar {% endblock%}
+
+
+{% block body %}
+<div class="log">
+<div class="login-card-container">
+    <div class="login-card">
+        <div class="login-card-logo">
+            <img src="../static/logo4.png" alt="logo">
+        </div>
+        <div class="login-card-header">
+            <h1>Actualizar</h1>
+        </div>
+        {% for producto in  productos %}
+        <form action="/editar1/{{producto.id_producto}}" method="post" class="login-card-form">
+            <!-- <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">ID</span>
+                <input type="text" value="" placeholder="Ingrese el nombre" id="id" name="id" autofocus required>
+            </div> -->
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">Nombre</span>
+                <input type="text" value="{{producto.nombre_producto}}" placeholder="Ingrese el nombre" id="nombre_producto" name="nombre_producto" required>
+            </div>
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">marca</span>
+                <input type="text" value="{{producto.marca}}" placeholder="Ingrese la marca" id="marca" name="marca" required>
+            </div>
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">Precio</span>
+                <input type="text" value="{{producto.precio_unitario}}" placeholder="Ingrese el precio" id="precio_unitario" name="precio_unitario" required>
+            </div>
+            <button type="submit">Actualizar</button>
+            </form>
+        {% endfor %}
+    </div>
+
+</div>
+</div>
+
+{% endblock %}

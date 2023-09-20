@@ -1,0 +1,130 @@
+{% extends './base.html'%}
+
+{% block tittle %} Cuenta {% endblock%}
+
+{% block body %}
+
+<!-- <div class="log">
+<div class="login-card-container">
+    <div class="login-card">
+        <div class="login-card-logo">
+            <img src="../static/logo4.png" alt="logo">
+        </div>
+        <div class="login-card-header">
+            <h1>Inicio de sesión</h1>
+            <div>Por favor inicie sesion</div>
+        </div>
+        <form class="login-card-form">
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">Correo</span>
+                <input type="text" placeholder="Ingrese el correo" id="emailForm" 
+                autofocus required>
+            </div>
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">contraseña</span>
+                <input type="password" placeholder="Ingrese la contraseña" id="passwordForm"
+                 required>
+            </div>
+            <div class="form-item-other">
+                <div class="checkbox">
+                    <input type="checkbox" id="rememberMeCheckbox" checked>
+                    <label for="rememberMeCheckbox">Recuerdame</label>
+                </div>
+                <a href="#">Olvide mi contraseña</a>
+            </div>
+            <button type="submit">Iniciar sesion</button>
+        </form>
+        <div class="login-card-footer">
+            ¿No tiene cuenta? <a href="{{ url_for('registro')}}">Crear una cuenta.</a>
+        </div>
+    </div>
+    <div class="login-card-social">
+        <div>Otras opciones de inicio de sesión</div>
+        <div class="login-card-social-btns">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-google" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M17.788 5.108a9 9 0 1 0 3.212 6.892h-8"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+</div> -->
+
+<h1>bienvenido, {{usuario}}
+  <a href="{{url_for('logout')}}">salir</a></h1>
+
+<div class="containers" id="containers">
+
+    <div class="form-containers register-containers">
+      <form action="/insertar2" method="post" class="rh">
+        <h1>Registrarse</h1>
+        <input type="text" placeholder="Nnombre" id="nombre" name="nombre" class="in">
+        <input type="email" placeholder="Correo" id="correo" name="correo" class="in">
+        <input type="password" placeholder="Contraseña" id="contraseña" name="contraseña" class="in">
+        <button class="brt" type="submit">Registrar</button>
+        <span class="es">o use su cuenta</span>
+        <div class="social-containers">
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-google"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-containers login-containers">
+      <form action="/login" class="rh">
+        <h1>Iniciar sesion</h1>
+        <input type="text" placeholder="Usuario" class="in" >
+        <input type="password" placeholder="Contraseña" class="in">
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label>Recordarme</label>
+          </div>
+          <div class="pass-link">
+            <a href="#" class="so">¿Olvidaste la contraseña?</a>
+          </div>
+        </div>
+        <button class="brt" type="submit">Ingresar</button>
+        <span class="es">o use su cuenta</span>
+        <div class="social-containers">
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-google"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="overlay-containers">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Hola <br>Amigo</h1>
+          <p>Si ya tienes cuenta ingresa con ella aqui</p>
+          <button class="ghost" id="login">Iniciar sesion
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1 class="title">Comienza tu <br> viaje ahora</h1>
+          <p>Si no tienes cuenta aun, unete a nosotrosy comienza tu viaje.</p>
+          <button class="ghost" id="register">Registrarse
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}

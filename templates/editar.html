@@ -1,0 +1,42 @@
+{% extends './base.html' %}
+
+{% block tittle %} Actualizar {% endblock%}
+
+
+{% block body %}
+
+
+
+<div class="log">
+<div class="login-card-container">
+    <div class="login-card">
+        <div class="login-card-logo">
+            <img src="../static/logo4.png" alt="logo">
+        </div>
+        <div class="login-card-header">
+            <h1>Actualizar</h1>
+        </div>
+        {% for usuario in  usuarios %}
+        <form action="/editar/{{usuario.id}}" method="post" class="login-card-form">
+            <!-- <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">ID</span>
+                <input type="text" value="" placeholder="Ingrese el nombre" id="id" name="id" autofocus required>
+            </div> -->
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">Nombre</span>
+                <input type="text" value="{{usuario.nombre}}" placeholder="Ingrese el nombre" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">Correo</span>
+                <input type="email" value="{{usuario.correo}}" placeholder="Ingrese el correo" id="correo" name="correo" required>
+            </div>
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">Contraseña</span>
+                <input type="password" value="{{usuario.contraseña}}" placeholder="Ingrese la contraseña" id="contraseña" name="contraseña" required>
+            </div>
+            <button type="submit">Actualizar</button>
+        </form>
+        {% endfor %}
+
+{% endblock %}
+

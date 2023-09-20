@@ -1,0 +1,252 @@
+{% extends './base.html'%}
+
+{% block tittle %} cigarrete {% endblock%}
+
+{% block body %}
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+		  <div class="carousel-item active" data-bs-interval="3000">
+			<img src="../static/slide3.png" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item" data-bs-interval="3000">
+			<img src="../static/slide1.png" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="../static/slide2.png" class="d-block w-100" alt="...">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+<div class="titulo">
+		<h1>CATEGORIAS DE MARLBORO</h1>
+	</div>
+<div class="frut">
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/rojos.jpg" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Marlboro rojo</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Marlboro rojos vienen en un paquete blanco con una cresta roja y está disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/mediano.png" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Marlboro mediano</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Marlboro mediano vienen en un paquete blanco con una cresta pequeña de color rojo. Están disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/ligero.jpg" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Marlboro ligero</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Marlboro ligero vienen en un paquete  blanco con una cresta de color dorado. Estos están disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/ultra_ligero.png" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Marlboro ultra ligero</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>El Marlboro ultra ligero viene en un paquete blanco con una cresta de color plateado. Está disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/mentolados.jpeg" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Marlboro mentolado</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Marlboro mentolado viene en un paquete plateado y verde. Está disponibles en variaciones con sabor completo y ligero.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+</div>
+<div class="titulo">
+		<h1>CATEGORIAS DE PALL MALL</h1>
+	</div>
+<div class="frut">
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/pallmallrojos.png">
+    </div>
+      <div class="tr-header">
+        <h1>Pall Mall rojo</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Pall Mall rojos vienen en un paquete blanco con una cresta roja y está disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/pallmallblancos.jpg" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Pall Mall blancos</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Pall Mall mediano vienen en un paquete blanco. Están disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/pallmallpepino.webp" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Pall Mall pepino</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Pall Mall ligero vienen en un paquete negro con franjas verdes. Estos están disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/doblecapsula.jpg" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Pall Mall doble capsula</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Pall Mall ultra ligero viene en un paquete negro con franjas rojas y azules. Está disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/pallmallmenta.webp" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Pall Mall menta</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Pall Mall mentolado viene en un paquete negro con frjanjas celestes. Está disponibles en variaciones con sabor completo y ligero.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+</div>
+<div class="titulo">
+		<h1>CATEGORIAS DE CAMEL</h1>
+	</div>
+<div class="frut">
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/camelfilters.webp" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Camel filters</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Camel rojos vienen en un paquete blanco con una cresta roja y está disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/Orange.webp" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Camel Orange</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Camel mediano vienen en un paquete blanco. Están disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/lights.webp" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Camel lights</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Camel ligero vienen en un paquete negro con franjas verdes. Estos están disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/smooth.webp" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Camel smooth</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Camel ultra ligero viene en un paquete negro con franjas rojas y azules. Está disponibles en tamaño extra grande y en paquetes de 100 unidades.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+  <div class="tarjeta">
+    <div class="tr-img">
+      <img class="td-img" src="../static/Natural Flavour.jpg" alt="">
+    </div>
+      <div class="tr-header">
+        <h1>Camel Natural Flavour</h1>
+      </div>
+        <div class="tr-body-1">
+          <p>Camel mentolado viene en un paquete negro con frjanjas celestes. Está disponibles en variaciones con sabor completo y ligero.</p>
+        </div>
+          <div class="tr-footer">
+            <a href="{{ url_for('carta')}}" class="btk"><strong>ir a productos</strong></a>
+          </div>
+  </div>
+</div>
+{% endblock %}

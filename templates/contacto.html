@@ -1,0 +1,54 @@
+{% extends './base.html'%}
+
+{% block tittle %} Productos {% endblock%}
+
+{% block body %}
+<div class="contente">
+
+    <h1 class="logo">Contac<span>tanos</span></h1>
+
+    <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+            <h3>Contactanos</h3>
+            <form action="">
+                <p>
+                    <label>Nombre completo</label>
+                    <input type="text" name="fullname">
+                </p>
+                <p>
+                    <label>Correro electronico</label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label>Número de teléfono</label>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label>Asunto</label>
+                    <input type="text" name="affair">
+                </p>
+                <p class="block">
+                   <label>Mensaje</label> 
+                    <textarea name="message" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button>
+                        Enviar
+                    </button>
+                </p>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h4>Mas información</h4>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i>Amado Nervo 1201, Mirador del Sol, 45050 Zapopan, Jal.</li>
+                <li><i class="fas fa-phone"></i> 5576002384</li>
+                <li><i class="fas fa-envelope-open-text"></i> contact@cigarrete.com.mx</li>
+            </ul>
+            <p>Responderemos a sus dudas lo mas pronto posible.</p>
+            <p>cigarrete.com.mx</p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

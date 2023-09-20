@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="../static/img" href="../static/logo4.png">
+	<link rel="stylesheet"  href={{url_for('static', filename='css/stiles.css')}}>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+	<title>{% block tittle %} {% endblock%}</title>
+	<style>
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="{{ url_for('index')}}"><img src="../static/logo4.png" width="70"></a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{{ url_for('galeria')}}">Galeria</a>
+			  </li>
+			  <li class="nav-item">
+				  <li><a class="nav-link" href="{{ url_for('carta')}}">Productos</a></li>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="{{ url_for('contacto')}}">Contacto</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="{{ url_for('loc')}}">Localización</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="{{ url_for('cuenta')}}">Cuenta</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+
+{% block body %}
+
+{% endblock %}
+<!-- boton ir arriba-->
+<div id="button-up">
+	<i class="fa-solid fa-chevron-up"></i>
+  </div>
+  <footer class="main-footer">
+		<img src="../static/logo4.png" width="270">
+			<div class="footer__section">
+			  <h2 class="footer__title">Acerca de nosotros</h2>
+			  <p class="footer__txt">Somos una empresa dedicada a la venta y distribucion de tabaco dentro de la republica mexicana.</p>
+			</div>
+			<div class="footer__section">
+			  <h2 class="footer__title">Dirección:</h2>
+			  <p class="footer__txt">Amado Nervo 1201, Mirador del Sol, 45050 Zapopan, Jal.</p>
+			</div>
+			<div class="footer__section">
+			  <h2 class="footer__title">Contactanos</h2>
+			  <p class="footer__txt">Phone : 5576002384</p>
+			  <p class="footer__txt">Email : contacto@cigarrete.com.mx</p>
+			</div>
+			<p class="copy">© 2023 Marlboro. Derechos Reservados</p>
+	</footer>
+<script src={{url_for('static', filename='JavaScript/script.js')}}></script>
+</body>
+</html>
